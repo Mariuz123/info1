@@ -84,3 +84,19 @@ SELECT NomeD, Dipartimento FROM docenti
 INNER JOIN Corsi USING(CodDocente)
 WHERE Corsi.NomeCorso = 'Basi di Dati e Sistemi Informativi' OR Corsi.NomeCorso = 'Informatica Generale';
 
+SELECT Matricola, NomeS FROM Studenti
+INNER JOIN CorsidiLaurea USING(CorsodiLaurea)
+INNER JOIN Frequenta USING(Matricola)
+INNER JOIN Corsi ON Frequenta.CodiceCorso=Corsi.CodiceCorso
+INNER JOIN Docenti ON Corsi.CodDocente=Docenti.CodDocente
+WHERE CorsidiLaurea.TipodiLaurea = 'L' AND Docenti.NomeD = 'Felice';
+
+SELECT TipodiLaurea, AVG(AnnoN) FROM CorsidiLaurea
+INNER JOIN Studenti USING(CorsodiLaurea);
+
+SELECT CodiceCorso, COUNT(Matricola) FROM Frequenta
+INNER JOIN Corsi USING(CodiceCorso)
+INNER JOIN Docenti ON Corsi.CodDocente=Docenti.CodDocente
+WHERE Docenti.NomeD='Leoni';
+
+SELECT CodiceCorso FROM 
