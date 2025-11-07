@@ -98,5 +98,3 @@ SELECT CodiceCorso, COUNT(Matricola) FROM Frequenta
 INNER JOIN Corsi USING(CodiceCorso)
 INNER JOIN Docenti ON Corsi.CodDocente=Docenti.CodDocente
 WHERE Docenti.NomeD='Leoni';
-
-SELECT CodiceCorso FROM 
