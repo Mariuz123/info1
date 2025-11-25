@@ -39,6 +39,5 @@ CREATE TABLE Personaggi(
 
 CREATE TABLE Dipinto(
     IDOpere INT NOT NULL,
-    TipoP VARCHAR(16);
-    
+    TipoP VARCHAR(16),
 );
