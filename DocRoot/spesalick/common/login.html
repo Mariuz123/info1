@@ -5,15 +5,20 @@
 </head>
 <body>
     <h1 id = "head">Login</h1>
-    <form action="/DocRoot/spesalick/index.php" method="POST">
+    <form action="/DocRoot/spesalick/config.php" method="POST">
+
         <label for = "fname">Name</label><br>
         <input type = "text" id = "fname" name = "Name" required><br><br>
+
         <label for = "sname">Surname</label><br>
         <input type = "text" name="Surname" id="sname" required><br><br>
+
         <label for = "eMail">Email</label> <br>
         <input type="email" name="Email" id="eMail" required><br><br>
+
         <label for="pwd">Password:</label><br>
         <input type="password" id="pwd" name="pwd" required><br><br>
+
         <label for="product">Product</label><br>
         <input list="products" name="prduct"><br><br>
         <datalist id="products">
@@ -22,7 +27,8 @@
             <option value = "Prodotti casa">
             <option value = "Alcolici">
             <option value = "Gatti">
-          </datalist>
+        </datalist>
+        
         <input type="submit" id = "submit">
     </form>
 </body>
