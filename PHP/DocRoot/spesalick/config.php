@@ -1,8 +1,9 @@
 <?php
 
 $host = 'localhost';
-$db = 'mercato';
+$db = 'utenti';
 $user = 'root';
 $password = '';
+
 
 ?>
