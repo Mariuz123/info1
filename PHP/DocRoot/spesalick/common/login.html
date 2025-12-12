@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spesalick/common/style.css">
 </head>
 <body>
     <h1 id = "head">Login</h1>
-    <form action="../connect.php" method="POST">
+    <form action="../connect1.php" method="POST">
 
         <label for = "fname">Name</label><br>
         <input type = "text" id = "fname" name = "name" required><br><br>
@@ -18,18 +18,8 @@
 
         <label for="pwd">Password:</label><br>
         <input type="password" id="pwd" name="pwd" required><br><br>
-
-        <label for="product">Product</label><br>
-        <input list="products" name="prduct"><br><br>
-        <datalist id="products">
-            <option value = "Macelleria">
-            <option value = "Ortofrutta">
-            <option value = "Prodotti casa">
-            <option value = "Alcolici">
-            <option value = "Gatti">
-        </datalist>
         
-        <input type="submit" id = "submit">
+        <input type="submit" value = "INVIA" id = "btn">
     </form>
 </body>
 </html>
