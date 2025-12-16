@@ -32,6 +32,16 @@
             $statement->execute();
         }   
 
+        $statement = $conn->prepare("SELECT idUtente FROM utenti WHERE nome = :nome AND sname = :sname AND eMail = :eMail");
+        $statement->bindParam(':nome', $name);
+        $statement->bindParam(':sname', $sname);
+        $statement->bindParam(':eMail', $eMail);
+        $statement->execute();
+
+        $result = $statement->fetchAll(\PDO::FETCH_ASSOC);
+
+        $id = $result[0];
+
         include 'common/store.html';
 
         $conn = null;

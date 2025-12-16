@@ -15,6 +15,7 @@ CREATE TABLE prodotti(
     idProdotto INT AUTO_INCREMENT NOT NULL,
     nome VARCHAR(16),
     prezzo INT,
+    qt INT,
     PRIMARY KEY(idProdotto)
 );
 
@@ -22,7 +23,14 @@ CREATE TABLE vedite(
     idVendite INT AUTO_INCREMENT NOT NULL,
     idUtente INT,
     PRIMARY KEY(idVendite),
-    Foreign Key (idVendite) REFERENCES utenti(idUtente)
+    Foreign Key (idUtente) REFERENCES utenti(idUtente)
 );
 
-CREATE TABLE 
+CREATE TABLE prodottiVendite(
+    idProdVen INT AUTO_INCREMENT NOT NULL,
+    idVendite INT,
+    idProdotto INT,
+    PRIMARY KEY(idProdVen),
+    Foreign Key (idVendite) REFERENCES vedite(idVendite),
+    Foreign Key (idProdotto) REFERENCES prodotti(idProdotto)
+);
