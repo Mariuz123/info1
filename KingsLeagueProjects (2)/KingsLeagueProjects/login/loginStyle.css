@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    color: rgba(243,173,53,255);
+    font-family: Archivo, sans-serif;
+    font-weight: 400;
+}
+
+#information{
+    padding-top: 15%;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+form{
+    margin-left: 33%;
+    border-radius: 20px;
+    width: 33%;
+    box-shadow: 0px 0px 16px 0px rgba(243,173,53,255);
+}
+
+.navBar{
+    width: 99.25%;
+    position: fixed;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0px 0px 16px 0px rgba(243,173,53,255);
+}
+
+.navBar a {
+    float: left;
+    font-size: 25px;
+    color: rgba(220,173,53,255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown{
+    float: left;
+    overflow-y: auto;
+}
+
+.dropdown .btn{
+    cursor: pointer;
+    font-size: 25px;  
+    border: none;
+    outline: none;
+    color: rgba(220,173,53,255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .btn, .btn:focus {
+    background-color: rgba(220,173,53,255);
+    color: black;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    background-color: black;
+    min-width: 10vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgba(220,173,53,255);
+    padding: 0.5vw 1vw;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(220,173,53,255);
+    color: black;
+    text-decoration: underline;
+}
+
+.show {
+    display: block;
+}
+
+#imgKings{
+    width: 1.15vw; 
+    height: 1.5vw;
+}

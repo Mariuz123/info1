@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>PRESIDENTI</title>
+        <link rel="stylesheet" href="fetchStyle.css">
+    </head>
+    <body>
+
+        <script>
+            function clicFunction(){
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+    
+            window.onclick = function(e) {
+                 if (!e.target.matches('.btn')) {
+                    var myDropdown = document.getElementById("myDropdown");
+                    if (myDropdown.classList.contains('show')) {
+                         myDropdown.classList.remove('show');
+                    }
+                } 
+            }
+
+    
+        </script>
+
+        <div class = "navBar">
+            <a href="https://kingsleague.pro/it/italia" id = "img"><img id = "imgKings" src="/img/Kingsleaguelogo.png" alt="imgnot"></a>
+            <a href="../index.html">HOME</a>
+            <div class = "dropdown">
+                <button class = "btn" onclick = "clicFunction()">TEAMS
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="https://kingsleague.pro/it/squadre/92-trm-fc"><img src="/img/TRM (2).png" alt="err" style="width: 40px; height: 40px;">TRM </a>
+                    <a href="https://kingsleague.pro/it/squadre/86-zebras-fc"><img src="/img/ZEB.png" alt="err" style="width: 40px; height: 40px;">ZEBRAS</a>
+                    <a href="https://kingsleague.pro/it/squadre/90-alpak-fc"><img src="/img/APK.png" alt="err" style="width: 40px; height: 40px;">ALPA K</a>
+                    <a href="https://kingsleague.pro/it/squadre/88-fc-zeta"><img src="/img/ZTA.webp" alt="err" style="width: 40px; height: 40px;">ZETA</a>
+                    <a href="https://kingsleague.pro/it/squadre/84-punchers-fc"><img src="/img/PNC.png" alt="err" style="width: 40px; height: 40px;">PUNCHERS</a>
+                    <a href="https://kingsleague.pro/it/squadre/93-underdogs-fc"><img src="/img/und.webp" alt="err" style="width: 40px; height: 40px;">UNDERDOGS</a>
+                    <a href="https://kingsleague.pro/it/squadre/83-gear-7-fc"><img src="/img/g7.png" alt="err" style="width: 40px; height: 40px;">GEAR 7</a>
+                    <a href="https://kingsleague.pro/it/squadre/85-boomers"><img src="/img/BMR.png" alt="err" style="width: 40px; height: 40px;">BOOMERS</a>
+                    <a href="https://kingsleague.pro/it/squadre/59-stallions"><img src="/img/STL.png" alt="err" style="width: 40px; height: 40px;">STALLIONS</a>
+                    <a href="https://kingsleague.pro/it/squadre/91-black-lotus-fc"><img src="/img/BLK.webp" alt="err" style="width: 40px; height: 40px;">BLACK LOTUS</a>
+                    <a href="https://kingsleague.pro/it/squadre/89-fc-caesar"><img src="/img/CSR.png" alt="err" style="width: 40px; height: 40px;">CESAR</a>
+                    <a href="https://kingsleague.pro/it/squadre/87-circus-fc"><img src="/img/CIR.webp" alt="err" style="width: 40px; height: 40px;">CIRCUS</a>
+                </div>
+            </div>
+            <a href="/login/login.html" id = "login">LOGIN</a>
+            <a href="/fetch/pres.html">PRESIDENTI</a>
+        </div>
+        <div id = "home"><img src="/img/backgroungKings.webp" alt="err" style="width: 95vw; height: 40vw; padding-left: 1.8vw;"></div>
+        <div>
+        <h1 id = "invito">CLICCA PER VEDERE I PRESIDENTI DELLE SQUADRE</h1>
+        <button id = "btn" onclick="onClick()">VEDI</button>
+        <br><br>
+        <div id = "presField">
+            <table>
+                <tr>
+                    <th>NOME</th>
+                    <th>SQUADRA</th>
+                    <th>STREAMER</th>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+                <tr>
+                    <td class = "nome"></td>
+                    <td class="squadra"></td>
+                    <td class="img"></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+
+    <script src="fetch.js"></script>
+</html>

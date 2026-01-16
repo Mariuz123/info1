@@ -1,0 +1,16 @@
+{
+    
+    "presidenti" : [
+        {"nome" : "Tmblur", "squadra" : "STALLIONS", "link" : "../img/blur.webp"},
+        {"nome" : "TheRealMarza", "squadra" : "TRM", "link" : "../img/marza.webp"},
+        {"nome" : "KFrenezy", "squadra" : "AlpaK", "link" : "../img/kappa.webp"},
+        {"nome" : "offSamuel + Sergio Cruz", "squadra" : "Black Lotus", "link" : "../img/sergio.webp"},
+        {"nome" : "Fedez", "squadra" : "Boomers", "link" : "../img/fedez.webp"},
+        {"nome" : "GrenBaud", "squadra" : "Circus", "link" : "../img/gren.webp"},
+        {"nome" : "Enerix + Er Faina", "squadra" : "FC Cesar", "link" : "../img/faina.webp"},
+        {"nome" : "PirlasV", "squadra" : "Punchers", "link" : "../img/prila.webp"},
+        {"nome" : "Mirko Cisco", "squadra" : "Underdogs", "link" : "../img/cisco.webp"},
+        {"nome" : "Luca Campolunghi", "squadra" : "Zebras", "link" : "../img/campo.webp"}
+    ]
+
+}
