@@ -1,0 +1,39 @@
+body{
+    font-family: Archivo, sans-serif;
+    font-weight: 400;
+    color: rgba(220,173,53,255);
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.navBar{
+    width: 99.25%;
+    position: fixed;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0px 0px 16px 0px rgba(243,173,53,255);
+}
+
+.navBar a {
+    float: left;
+    font-size: 25px;
+    color: rgba(220,173,53,255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#imgKings{
+    width: 1.15vw; 
+    height: 1.5vw;
+}
+
+form{
+    margin-left: 33%;
+    border-radius: 20px;
+    width: 33%;
+    box-shadow: 0px 0px 16px 0px rgba(243,173,53,255);
+}
