@@ -23,6 +23,7 @@
         $hashedPassword = $rows[0]['pwd'];
         if(password_verify($insertedPassword, $hashedPassword)){
             $_SESSION['idLogin'] = $rows[0]['idLogin'];
+            $_SESSION['NTessera'] = $rows[0]['NTessera'];
         }
     } else {
         $sth = DBHandler::getPDO()->prepare("INSERT INTO soci(nome, cognome, indirizzo, dataDiNascita, professione) VALUES (:nome, :cognome, :indirizzo, :dataDiNascita, :professione");
@@ -61,8 +62,9 @@
         $rows = $sth->fetchAll();
 
         $_SESSION['idLogin'] = $rows[0]['idLogin'];
+        $_SESSION['NTessera'] = $rows[0]['NTessera'];
     }
 
-    header('Location: logged.php');
+    header('Location: loggedForm.php');
 
 ?>
