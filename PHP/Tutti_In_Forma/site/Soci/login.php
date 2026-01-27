@@ -50,6 +50,7 @@
         $sth->bindParam(":mail", $mail);
         $sth->bindParam(":pwd", password_hash($pwd, PASSWORD_DEFAULT));
         $sth->bindParam(":NTessera", $row[0]['NTessera']);
+        $sth->bindParam(":ruolo", null);
         $sth->execute();
 
         $sql = "SELECT NTessera FROM loginForm WHERE mail = :mail AND pwd = :pwd"

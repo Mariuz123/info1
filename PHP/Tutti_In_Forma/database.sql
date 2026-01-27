@@ -92,6 +92,7 @@ CREATE TABLE loginForm(
     pwd VARCHAR(32),
     mail VARCHAR(32),
     NTessera INT NOT NULL,
+    ruolo BOOL, 
     PRIMARY KEY(idLogin),
     Foreign Key (NTessera) REFERENCES soci(NTessera)
 );
